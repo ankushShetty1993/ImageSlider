@@ -116,7 +116,10 @@ const Slider = ({Allphotos, dispatch}) => {
         }
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
-        <View>
+        <View style={{alignItems: 'center'}}>
+          <Text>Pull Down to refresh</Text>
+        </View>
+        <View style={{alignItems: 'center', marginTop: 20}}>
           <Text>{name ? name : author[0]}</Text>
         </View>
         <SliderBox
